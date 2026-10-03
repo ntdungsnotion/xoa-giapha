@@ -6,12 +6,12 @@
 // NGUOI_QUAN_LY            : email người quản lý, hiện cho người chưa được cấp quyền
 // KHO_ANH                  : giữ nguyên 'anh' (trùng tên kho trong cai-dat.sql)
 // SAO_LUU_WEB_APP          : tuỳ chọn — địa chỉ web app sao lưu (Apps Script); để '' vẫn chạy
-export const SUPABASE_URL = 'ĐIỀN VÀO ĐÂY';
+export const SUPABASE_URL = 'https://mfrjoabfhlanndsruqth.supabase.co';
 
 export const SUPABASE_KHOA_CONG_KHAI =
-  'ĐIỀN VÀO ĐÂY';
+  'sb_publishable_aBMAlkaL0G2zrPJeZnSzsg_Da4vm8E_';
 
-export const NGUOI_QUAN_LY = 'ĐIỀN VÀO ĐÂY';
+export const NGUOI_QUAN_LY = 'admin';
 
 export const KHO_ANH = 'anh';
 
