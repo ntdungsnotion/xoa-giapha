@@ -59,6 +59,17 @@ function hienManHinhKhongCoQuyen(el, phien) {
     return;
   }
 
+  if (phien.trangThai === 'khongcay') {
+    el.append(khung([
+      tieuDe('Hệ thống chưa có gia phả nào'),
+      doan('Bạn là Quản trị hệ thống. Mở trang Quản trị, khu Gia phả, thẻ ' +
+           '“Tạo gia phả mới” để dựng gia phả đầu tiên.'),
+      veNutQuanTri(),
+      phien.email ? nhoMo('Bạn đang đăng nhập bằng: ' + phien.email) : null,
+    ]));
+    return;
+  }
+
   if (phien.trangThai === 'daxoa') {
     el.append(khung([
       tieuDe('Gia phả này đã bị xoá'),
