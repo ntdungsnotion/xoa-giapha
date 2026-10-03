@@ -1,0 +1,14 @@
+# giapha-supabase · robots.txt
+# Bước H7 của KE-HOACH-HA-TANG. Cập nhật: 03/09/2026
+#
+# Gia phả là dữ liệu riêng của dòng họ; không có lý do gì để nó nằm trong
+# kết quả tìm kiếm.
+#
+# ⚠ File này chỉ NHỜ công cụ tìm kiếm tử tế bỏ qua — nó KHÔNG phải rào chắn,
+#   và ai gõ thẳng địa chỉ vẫn mở được trang. Rào chắn thật nằm ở chỗ khác:
+#   trang này không chứa một mẩu dữ liệu gia phả nào. Người chưa đăng nhập tải
+#   về cũng chỉ được một ô đăng nhập trống, vì mọi thứ khác do Row Level
+#   Security canh ở tầng máy chủ.
+
+User-agent: *
+Disallow: /

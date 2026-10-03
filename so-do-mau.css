@@ -1,0 +1,32 @@
+html[data-theme] {
+  --sd-nen: var(--bg, #faf8f5);
+  --sd-giay: var(--paper, #fffdf9);
+  --sd-chu: var(--ink, #2a2622);
+  --sd-chu-phu: var(--muted, #8a8078);
+  --sd-chu-vua: color-mix(in srgb, var(--ink, #2a2622) 65%, var(--muted, #8a8078));
+  --sd-chu-mo: color-mix(in srgb, var(--muted, #8a8078) 70%, var(--paper, #fffdf9));
+  --sd-vien: var(--line, #e6e0d8);
+  --sd-vien-nhat: color-mix(in srgb, var(--line, #e6e0d8) 55%, var(--paper, #fffdf9));
+  --sd-vien-dam: color-mix(in srgb, var(--line, #e6e0d8) 55%, var(--muted, #8a8078));
+  --sd-nen-nhat: color-mix(in srgb, var(--line, #e6e0d8) 45%, var(--paper, #fffdf9));
+  --sd-nut: var(--pm-nut-chinh, #2a2622);
+  --sd-nut-chu: var(--pm-nut-chinh-chu, #fffdf9);
+  --sd-do: var(--danger, #8a3a2a);
+  --sd-do-dac: #8a3a2a;
+  --sd-do-nen: var(--danger-bg, #fbf0ec);
+  --sd-do-vien: color-mix(in srgb, var(--sd-do) 35%, var(--sd-giay));
+  --sd-vang: #8a6a3a;
+  --sd-vang-dac: #8a6a3a;
+  --sd-vang-nen: #fdf8ec;
+  --sd-vang-vien: #e8dcc4;
+  --sd-xanh: var(--ok, #2a6a4a);
+  --sd-xanh-nen: var(--ok-bg, #f2f8f4);
+}
+
+html[data-theme="dem-hoai-co"] {
+  --sd-do-dac: #a8483a;
+  --sd-vang: #d9b877;
+  --sd-vang-dac: #9a7a40;
+  --sd-vang-nen: #342c1c;
+  --sd-vang-vien: #5c4d30;
+}

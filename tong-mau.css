@@ -1,0 +1,73 @@
+:root, [data-theme="goc"] {
+  --pm-noi-dung:#fbfaf8; --pm-thanh:#f8f5f1; --pm-thanh-chu:#554f49;
+  --pm-thanh-tieu-de:#282522; --pm-thanh-hover:#efe9e2; --pm-thanh-nhan:#282522;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#f7e8dd; --pm-huy-hieu-chu:#8a5032;
+  --pm-link-ve:#746d66; --pm-nut-chinh:#282522; --pm-nut-chinh-chu:#fff;
+  --pm-nut-phu-chu:#514a44;
+}
+
+[data-theme="be-oliu"] {
+  --bg:#e8ded1; --paper:#fff4e6; --ink:#4a3b32; --muted:#715e4d; --line:#dfcdbc; --accent:#6c6555;
+  --pm-noi-dung:#f2e9de; --pm-thanh:#b9a58f; --pm-thanh-chu:#4d4037;
+  --pm-thanh-tieu-de:#493d36; --pm-thanh-hover:#cdbba8; --pm-thanh-nhan:#6c6555;
+  --pm-thanh-nhan-chu:#fff6e9; --pm-huy-hieu:#e8d4bd; --pm-huy-hieu-chu:#5b4636;
+  --pm-link-ve:#5a493d; --pm-nut-chinh:#6c6555; --pm-nut-chinh-chu:#fff6e9; --pm-nut-phu-chu:#4d4037;
+}
+[data-theme="nau-am"] {
+  --bg:#f6f1ea; --paper:#fff; --ink:#3d2b22; --muted:#7d6556; --line:#dec9b7; --accent:#7c4a36;
+  --pm-noi-dung:#fdfbf8; --pm-thanh:#ebdcd0; --pm-thanh-chu:#4f3b30;
+  --pm-thanh-tieu-de:#5c3c2e; --pm-thanh-hover:#dfcebe; --pm-thanh-nhan:#7c4a36;
+  --pm-thanh-nhan-chu:#fffaf5; --pm-huy-hieu:#f2ded0; --pm-huy-hieu-chu:#6e3e2b;
+  --pm-link-ve:#6d4d3d; --pm-nut-chinh:#7c4a36; --pm-nut-chinh-chu:#fffaf5; --pm-nut-phu-chu:#4f3b30;
+}
+[data-theme="xanh-cham"] {
+  --bg:#f1f5f9; --paper:#fff; --ink:#0f172a; --muted:#64748b; --line:#cbd5e1; --accent:#0284c7;
+  --pm-noi-dung:#fff; --pm-thanh:#1e293b; --pm-thanh-chu:#cbd5e1;
+  --pm-thanh-tieu-de:#f8fafc; --pm-thanh-hover:#334155; --pm-thanh-nhan:#0284c7;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#334155; --pm-huy-hieu-chu:#f8fafc;
+  --pm-link-ve:#94a3b8; --pm-nut-chinh:#0284c7; --pm-nut-chinh-chu:#fff; --pm-nut-phu-chu:#1e293b;
+}
+[data-theme="giay-do"] {
+  --bg:#f5eedc; --paper:#fff; --ink:#38291d; --muted:#7d6957; --line:#dfd0b5; --accent:#9e3223;
+  --pm-noi-dung:#fdfbf5; --pm-thanh:#e5dac1; --pm-thanh-chu:#4e392b;
+  --pm-thanh-tieu-de:#4e3020; --pm-thanh-hover:#d8caa9; --pm-thanh-nhan:#9e3223;
+  --pm-thanh-nhan-chu:#fff9f0; --pm-huy-hieu:#ebd4c0; --pm-huy-hieu-chu:#8a2517;
+  --pm-link-ve:#6b4632; --pm-nut-chinh:#9e3223; --pm-nut-chinh-chu:#fff9f0; --pm-nut-phu-chu:#4e392b;
+}
+[data-theme="hoang-dan"] {
+  --bg:#f7f2e8; --paper:#fff; --ink:#362419; --muted:#776051; --line:#dbcab8; --accent:#a4632a;
+  --pm-noi-dung:#fff; --pm-thanh:#3d2619; --pm-thanh-chu:#d8c3b0;
+  --pm-thanh-tieu-de:#f7e8d5; --pm-thanh-hover:#543724; --pm-thanh-nhan:#c87a32;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#543724; --pm-huy-hieu-chu:#f7e8d5;
+  --pm-link-ve:#cbb39c; --pm-nut-chinh:#c87a32; --pm-nut-chinh-chu:#fff; --pm-nut-phu-chu:#362419;
+}
+[data-theme="men-ngoc"] {
+  --bg:#edf4f0; --paper:#fff; --ink:#20332e; --muted:#5e7a72; --line:#c6dad2; --accent:#3a7d6a;
+  --pm-noi-dung:#fff; --pm-thanh:#2c443d; --pm-thanh-chu:#b8d1c7;
+  --pm-thanh-tieu-de:#e3f0ea; --pm-thanh-hover:#3b5c53; --pm-thanh-nhan:#428b77;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#3b5c53; --pm-huy-hieu-chu:#e3f0ea;
+  --pm-link-ve:#9fbfb4; --pm-nut-chinh:#428b77; --pm-nut-chinh-chu:#fff; --pm-nut-phu-chu:#20332e;
+}
+[data-theme="truc-diep"] {
+  --bg:#f2f5f0; --paper:#fff; --ink:#263623; --muted:#657861; --line:#c9d7c4; --accent:#4e6f47;
+  --pm-noi-dung:#fff; --pm-thanh:#cad6c4; --pm-thanh-chu:#394d35;
+  --pm-thanh-tieu-de:#344830; --pm-thanh-hover:#b8c7b1; --pm-thanh-nhan:#4e6f47;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#b2c4ab; --pm-huy-hieu-chu:#2b3c27;
+  --pm-link-ve:#4f6848; --pm-nut-chinh:#4e6f47; --pm-nut-chinh-chu:#fff; --pm-nut-phu-chu:#263623;
+}
+[data-theme="hoang-gia"] {
+  --bg:#f8f5f6; --paper:#fff; --ink:#311d2d; --muted:#755970; --line:#dfcbdc; --accent:#8a5c20;
+  --pm-noi-dung:#fff; --pm-thanh:#3b2336; --pm-thanh-chu:#d6bed2;
+  --pm-thanh-tieu-de:#f7eaf4; --pm-thanh-hover:#54344e; --pm-thanh-nhan:#9e6b28;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#54344e; --pm-huy-hieu-chu:#f7eaf4;
+  --pm-link-ve:#cca8c6; --pm-nut-chinh:#9e6b28; --pm-nut-chinh-chu:#fff; --pm-nut-phu-chu:#311d2d;
+}
+[data-theme="dem-hoai-co"] {
+  color-scheme: dark;
+  --bg:#1c1a17; --paper:#2c2824; --ink:#ede5dc; --muted:#a89d91; --line:#3f3933; --accent:#d08a48;
+  --ok:#7cc4a0; --ok-bg:#1f3a2e; --danger:#e8938a; --danger-bg:#43241f;
+  --pm-noi-dung:#24211d; --pm-thanh:#141311; --pm-thanh-chu:#d4cac0;
+  --pm-thanh-tieu-de:#f3eee6; --pm-thanh-hover:#2b2723; --pm-thanh-nhan:#c27a38;
+  --pm-thanh-nhan-chu:#fff; --pm-huy-hieu:#2b2723; --pm-huy-hieu-chu:#e8dfd5;
+  --pm-link-ve:#a69a8d; --pm-nut-chinh:#c27a38; --pm-nut-chinh-chu:#fff; --pm-nut-phu-chu:#ede5dc;
+}
