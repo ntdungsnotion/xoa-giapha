@@ -206,7 +206,14 @@ export async function layPhien({ docCayLuon = false } = {}) {
     const treeId = goi ? goi.treeId
       : (ds && ds.length) ? cayDangChon(ds, caiDat) : await cayDauTien(k);
 
-    const [tinRac, cd] = treeId ? await vongCay(treeId, false) : [{}, {}];
+    if (!treeId) {
+      return {
+        ...(await nenNguoi()), daDangNhap: true, email: nguoi.email || '',
+        vaiTro: 'quan_tri_he_thong', docDuoc: false, suaDuoc: false,
+        trangThai: 'khongcay', treeId: null,
+      };
+    }
+    const [tinRac, cd] = await vongCay(treeId, false);
     if (tinRac.daXoa) {
       docTruoc = null;
       return {
