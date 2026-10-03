@@ -1307,6 +1307,15 @@ export async function moKhoaTaiKhoan(userId) {
 }
 
 export async function taoTaiKhoan(email) {
+  const kq = await goiHamTaiKhoan({ email: String(email || '').trim() });
+  return kq.ok ? { ...kq, maNgan: kq.maNgan || '' } : kq;
+}
+
+export async function datLaiMatKhau(userId) {
+  return goiHamTaiKhoan({ viec: 'dat_lai_mat_khau', userId: String(userId || '') });
+}
+
+async function goiHamTaiKhoan(thanBody) {
   const k = layKhach();
   if (!k) return { ok: false, loi: 'Chưa nối được máy chủ.' };
   const { data: { session } } = await k.auth.getSession();
@@ -1319,20 +1328,28 @@ export async function taoTaiKhoan(email) {
         Authorization: 'Bearer ' + session.access_token,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ email: String(email || '').trim() }),
+      body: JSON.stringify(thanBody),
     });
     if (r.status === 404) {
       return { ok: false, loi: 'Máy chủ chưa có hàm tao-tai-khoan — chưa dán Edge Function.' };
     }
     const data = await r.json().catch(() => null);
     if (!data || data.ok !== true) {
-      return { ok: false, loi: noiTuChoi(data, 'Không tạo được tài khoản (HTTP ' + r.status + ').') };
+      if (thanBody.viec && data && /email không đúng khuôn/.test(data.loi || '')) {
+        return { ok: false, loi: 'Hàm tao-tai-khoan trên Supabase còn bản cũ — dán lại bản mới ' +
+          '(hướng dẫn cài đặt, bước 9) rồi thử lại.' };
+      }
+      return { ok: false, loi: noiTuChoi(data, 'Không thực hiện được (HTTP ' + r.status + ').') };
     }
     return {
       ok: true, loi: null, userId: data.userId, email: data.email,
       maNgan: data.maNgan || '', matKhau: data.matKhau,
     };
   } catch (e) {
+    if (e instanceof TypeError) {
+      return { ok: false, loi: 'Không gọi được hàm tao-tai-khoan. Thường là chưa dán Edge Function ' +
+        'lên Supabase (xem hướng dẫn cài đặt, bước 9); nếu đã dán rồi thì kiểm tra mạng.' };
+    }
     return { ok: false, loi: cauLoi(e) };
   }
 }
